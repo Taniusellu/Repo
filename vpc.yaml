@@ -1,0 +1,12 @@
+---
+- name: Playbook for VPC
+  hosts: localhost
+  tasks:
+    - name: VPC 
+      ec2_vpc_net:
+        name: "{{vpc_name}}"
+        cidr_block: "{{vpc_cidr}}"
+        region: "{{region}}"
+        tags:
+          Class: Ansible
+          Task: VPC
