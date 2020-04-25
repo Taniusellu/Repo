@@ -33,7 +33,7 @@
     template:
       src: node_exporter.service
       dest: /etc/systemd/system/node_exporter.service
-    notify: restart node_exporter
+#     notify: restart node_exporter
 
   - name: Systemctl daemon-reload
     shell: "sudo sudo systemctl daemon-reload"
