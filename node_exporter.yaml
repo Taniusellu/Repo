@@ -3,7 +3,7 @@
   hosts: localhost
   become: true
   become_method: sudo
-  user: sudo
+  become_user: centos
   tasks:
   - name: Add user
     shell: "sudo useradd --no-create-home --shell /bin/false prometheus"
