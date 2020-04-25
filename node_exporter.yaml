@@ -30,7 +30,7 @@
     shell: " sudo mv node_exporter-0.18.1.linux-amd64 /etc/prometheus/node_exporter "
 
   - name: Include File node_exporter.service
-    include: node_exporter.service
+    import_tasks: node_exporter.service
 
   - name: Systemctl daemon-reload
     shell: "sudo sudo systemctl daemon-reload"
