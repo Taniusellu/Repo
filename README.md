@@ -1,2 +1,2 @@
-Prometheus and Grafana
+Examples
 =======================
